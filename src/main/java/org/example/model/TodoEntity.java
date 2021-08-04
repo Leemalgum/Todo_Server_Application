@@ -19,7 +19,7 @@ public class TodoEntity {
     @Column(nullable = false)
     private String title;
 
-    @Column(name = "todoOrder", nullable = false) //H2 데이터베이스에서 order를 예약어로 사용하기 때문에 임의의 이름 지정
+    @Column(name = "todoOrder", nullable = false) /*H2 데이터베이스에서 order를 예약어로 사용하기 때문에 임의의 이름 지정*/
     private Long order;
 
     @Column(nullable = false)
