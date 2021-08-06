@@ -47,10 +47,10 @@ public class TodoController {
     @GetMapping
     public ResponseEntity<List<TodoResponse>> readAll() {
         System.out.println("READ ALL");
-        List<TodoEntity> list = this.service.searchAll();
-        List<TodoResponse> responses = list.stream().map(TodoResponse::new)
+        List<TodoEntity> result = this.service.searchAll();
+        List<TodoResponse> response = result.stream().map(TodoResponse::new)
                 .collect(Collectors.toList());
-        return ResponseEntity.ok(responses);
+        return ResponseEntity.ok(response);
     }
 
     @PatchMapping("{id}")
