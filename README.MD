@@ -1,5 +1,5 @@
 ## Todo_Server_Application
-### Spring 프레임워크를 사용한 Todo List 서버 어플리케이션 
+### Spring 프레임워크를 사용한 Todo List 서버 어플리케이션 입니다.
 
 ### 🛠Stack 
 <div>
